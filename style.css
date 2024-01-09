@@ -1,0 +1,127 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f3b530;
+    background-image: linear-gradient(90deg, #6d05b3 0%, #f8aaaa 46%,#700069 100%);
+    background-size: 100% 100%;
+}
+
+h1{
+    color: #3d0039
+}
+
+.container{
+    background-color: rgba(255, 255, 255, .219);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    margin-top: 80px;
+}
+
+.form-group{
+    height: 70px;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(46,10,46);
+    width: 100%;
+    position: relative;
+    top:5px;
+}
+
+label{
+    position: relative;
+    color: rgb(46,10,46);
+    font-size: 18px;
+    top:32px;
+    left:5px;
+    z-index: -1;
+}
+
+label .icons-style{
+    position: absolute;
+    left: 335px;
+    font-size: 18px;
+}
+
+#togglePassword{
+    display: none;
+    position: absolute;
+    top:58%;
+    right:105px;
+    color: rgb(46,10,46);
+    transform: translate(0,-50%);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#togglePassword:hover{
+    color: rgb(82, 82, 82);
+}
+
+/* Use in javascript */
+
+.label-selected{
+    position: relative;
+    font-size: 13px;
+    color: rgb(82, 82, 82);
+    top:5px;
+    left: 5px;
+}
+
+
+.btn{
+    border:none;
+    background-color: rgb(46,10,46);
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    margin-left: 75%;
+
+    transform: translate(0px,0px);
+    transition: .5s;
+}
+
+.btn:hover{
+    box-shadow: 0 8px 15px -10px rgb(61,61,61),
+    0 16px 30px -5px rgb(61,61,61);
+    transform: translate(0px,-5px);
+    color: #ecececbb;
+}
+
+.links{
+    font-size: 14px;
+    color: rgb(46,10,46);
+}
+
+.links:hover{
+    color: #6d05b3;
+}
+
+#overlay{
+    background: #fff;
+    height: 550px;
+    width: 600px;
+    position: absolute;
+    transform: translate(0px,-25px);
+    border-radius: 25px;
+    background-image: url(./overlayImage.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+}
+
+@media only screen and (max-width:748px){
+    label .icons-style{
+        left:310px;
+    }
+    #overlay, #singUp{
+        display: none;
+    }
+    .btn{
+        margin-left: 65%;
+    }
+}
