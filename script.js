@@ -37,7 +37,7 @@ document.querySelectorAll('input[type="password"]').forEach((passwordInput) => {
 
 document.getElementById("registerLink").addEventListener('click',function(){
   if(window.innerWidth<600){
-    document.getElementById("singUp").style.display="block"
+    document.getElementById("signUp").style.display="block"
     document.getElementById("login").style.display="none"
   }else{
     document.getElementById("overlay").style.transform = 'translate(550px,-25px)'
@@ -46,7 +46,7 @@ document.getElementById("registerLink").addEventListener('click',function(){
 document.getElementById("loginLink").addEventListener('click',function(){
   if(window.innerWidth<600){
     document.getElementById("login").style.display="block"
-    document.getElementById("singUp").style.display="none"
+    document.getElementById("signUp").style.display="none"
   }else{
     document.getElementById("overlay").style.transform = 'translate(0px,-25px)'
   }
